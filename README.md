@@ -335,7 +335,7 @@ FROM (
         codetronconhydro, coderegion, codedepartement, naturestation,
         libellenaturestation, typeentitehydro,
         ST_SetSRID(ST_MakePoint(coordx, coordy), 2154) AS geom
-    FROM naiades_referentiel_interne.station_full
+    FROM naiades_referentiel_interne.station_full ---fichier stations_troncons_plando.txt
     WHERE typeentitehydro = '2' -- cours d'eau
 ) AS p
 CROSS JOIN LATERAL (
