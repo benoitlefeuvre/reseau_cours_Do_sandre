@@ -352,3 +352,6 @@ WHERE c.id = test.edge;
 ---
 
 **Usage métier global** : ces fonctions permettent de naviguer dans le réseau hydrographique, de relier stations et tronçons, et de préparer les données pour l'affichage ou l'analyse métier (cartographie, suivi du réseau, étude des distances et connexions).
+
+
+![Résultat pgr_dijkstra dans QGIS](dijkstra.png)
